@@ -1,9 +1,24 @@
+// validación para deployment en GitHub
+
+
+
+var url = window.location.href;
+var swLocation = '/twittor/sw.js';
+
+
 
 //Registro del SW
 
 if(navigator.serviceWorker){
 
-navigator.serviceWorker.register('/SW.js');
+    if (url.includes('localhost')){
+
+        swLocation = '/SW.js';
+    
+    }
+
+
+    navigator.serviceWorker.register( swLocation );
 
 }
 
