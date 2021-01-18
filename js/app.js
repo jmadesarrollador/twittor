@@ -3,7 +3,8 @@
 
 
 var url = window.location.href;
-var swLocation = '/twittor/sw.js';
+var swLocation = 'https://jmadesarrollador.github.io/twittor/SW.js';
+//https://jmadesarrollador.github.io/twittor/
 
 
 
